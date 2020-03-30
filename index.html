@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simple Contact Form With TS</h1>
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+
+                <div class="container">
+                    <h3 style="text-align: center;">Fill this form</h3>
+                 
+                        <div>
+                            FirstName:
+                            <input type="text" id="firstname"  name="firstname">
+                        </div>
+                        <div>
+                            LastName :
+                            <input type="text" id="lastname"  name="lastname">
+                        </div>
+                        <div>
+                            Email:
+                            <input type="text" id="email"  name="email">
+                        </div>
+                        <div>
+                            Phone Number:
+                            <input type="text" id="phone"  name="phone">
+                        </div>
+                        <div>
+                            City:
+                            <input type="text" id="city"  name="city">
+                        </div>
+                        <div>
+
+                            <input type="submit" id="addData" name="addData" value="Add">
+                        </div>
+                        <div>
+
+                            <input type="submit" id="showData" name="showData" value="Show Data">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="card">
+                <div class="container">
+                    <h3 style="text-align: center;">Person Data Table</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodys">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
